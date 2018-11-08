@@ -1,0 +1,16 @@
+{
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "execMap": {
+    "js": "babel-node"
+  },
+  "ext": "js jsx json",
+  "ignore": [
+    ".git/",
+    "node_modules/"
+  ],
+  "watch": [
+    "build"
+  ]
+}

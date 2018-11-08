@@ -1,0 +1,33 @@
+{
+  "name": "livestream-random-express",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon ./build/app.js",
+    "build": "rimraf dist && babel ./build --out-dir dist --ignore yarn.lock,package-lock.json,package.json,node_modules",
+    "start": "node --trace-warnings ./dist/app.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "bip39": "^2.5.0",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.11",
+    "mic": "^2.1.2",
+    "morgan": "^1.9.1",
+    "sha.js": "^2.4.11",
+    "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "nodemon": "^1.18.5",
+    "rimraf": "^2.6.2"
+  }
+}
